@@ -11,7 +11,3 @@ Either just copy the files into overleaf, or, for instance, if using vscode with
 - make change, `cmd-s`, and see the pdf auto-update
 
 Create a file `.local.pnr.tex` with your student-id/personal-nr to avoid having it committed to git.
-
-### Other
-
-Template initially created by Leonard Pauli, sep 2020.

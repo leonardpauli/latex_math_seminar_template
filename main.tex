@@ -1,37 +1,57 @@
-\newcommand{\SeminarNr}{1}
-\newcommand{\Course}{MYCOURSE}
+\newcommand{\SeminarNr}{3}
+\newcommand{\Course}{SF1671}
 \newcommand{\Author}{MYNAME}
-\newcommand{\Date}{MYDATE}
-\newcommand{\Organization}{MYUNIVERSITY}
+\newcommand{\Date}{MYDATE sep 2020}
+\newcommand{\Organization}{KTH}
 \newcommand{\ExtraHeaderLeft}{}
 %\newcommand{\ExtraHeaderLeft}{, \input{.local.pnr.tex}\!\!} % use to put your personal nr in the header
 
 \documentclass{seminar}
 \begin{document}
 
-
 \section{}
 
-\subsection{(summary title of question)}
+\subsection{Talföljdsbevis med induktion}
 \begin{questionquote}
-	(direct quote from the seminar question, inc. $m\cdot a\Rel[T] h\Z$ formulas)
+	Talföljden $\{a_n\}_{n=0}^{\infty}$ definieras rekursivt av
+	$a_0=0, a_1=1, a_2=4 \text{ och } a_n=4n-6+a_{n-1}-a_{n-2}+a_{n-3},\text{ för }n\ge3.$
+	Visa med induktion eller stark induktion att $a_n=n^2$ för alla $n\ge0$.
 \end{questionquote}
 
 \dots
-
 
 \clearpage
-\subsection{\dots}
+\subsection{Kardinalitetsekvivalensbevis i $\R$}
 \begin{questionquote}
-	\dots
+	Varje reellt tal $x\in[0, 1]$ kan skrivas på decimalform
+	$$x=(0, x_1x_2x_3\cdots)_{10}=\sum_{k=1}^{\infty} x_k10^{-k},$$
+	där $x_i\in\{0,1,2,\dots,9\}$ för alla i.
+	För unikhet förbjuder utvecklingar som slutar med en oändlig följd av 9or.
+	Låt $A$ vara mängden av all $x\in[0,1]$ vars decimalutveckling endast innehåller jämna tal.
+	Visa att $A$ och $\R$ har samma kardinalitet, d.v.s. $|A|=|\R|$.
+
+	\textit{Bonus.} Visa att det inte finns reella tal
+	$0\le a\le b \le 1$ sådant att $(a, b)\subseteq A$.
 \end{questionquote}
 
-\subsubsection{(if subquestion, quote it)}
 \dots
 
-\subsubsection{(example of an additional subquestion)}
+\clearpage
+\subsection{Lösning av linjär ekvation med modulär aritmetik}
+\begin{questionquote}
+	Finn alla lösningar till $343x=77$ i $\Z_{805}$.
+\end{questionquote}
+
 \dots
 
+\clearpage
+\subsection{Rest vid division av stora tal med hjälp av Fermats lilla sats}
+\begin{questionquote}
+	Bestäm resten av $2771^{3546}$ vid division med $887$.
+	\textit{Tips.} Använd Fermats lilla sats.
+\end{questionquote}
+
+\dots
 
 \end{document}
 
