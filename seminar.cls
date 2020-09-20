@@ -16,9 +16,15 @@
 
 % packages
 \LoadClass[a4paper,10pt]{article} % base class/styling
-\usepackage[english]{babel} % ensure not user-dependent
-\usepackage[T1]{fontenc} % ensure 256 (vs 128) chars; eg. ability to copy ö and not have it split
-\usepackage[utf8]{inputenc} % ensure utf8 (vs ascii)
+\usepackage{iftex}
+\ifxetex
+  \usepackage{polyglossia} % modern babel like replacement for xelatex
+  \setdefaultlanguage{english}
+\else
+  \usepackage[T1]{fontenc} % ensure 256 (vs 128) chars; eg. ability to copy ö and not have it split
+  \usepackage[utf8]{inputenc} % ensure utf8 (vs ascii)
+  \usepackage[english]{babel} % ensure not user-dependent
+\fi
 \usepackage{amsmath} % math symbols?
 \usepackage{amsfonts} % math symbols?
 \usepackage{amssymb} % \blacksquare
